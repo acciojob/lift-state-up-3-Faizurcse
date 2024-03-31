@@ -13,7 +13,7 @@ const App = () => {
     
   return (
     <>
-        <div style={{width:'500px',height:'300px',backgroundColor:'yellow'}}>
+        <div className="parent" style={{width:'500px',height:'300px',backgroundColor:'yellow'}}>
           <h1 style={{textAlign:'center'}}>Parent Component</h1>
           <Components1 selectedoption = {selectedoption}/>
           <Components2  selectedoption = {selectedoption}/>
