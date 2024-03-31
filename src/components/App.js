@@ -1,13 +1,26 @@
+import React, { useState } from "react";
+import Components1 from "./Components1";
+import Components2 from "./Components2";
 
-import React from "react";
-import './../styles/App.css';
 
 const App = () => {
+  const[selectedOption,setSelectedOption] = useState('')
+  const selectedoption = (option) => {
+    console.log(option)
+    setSelectedOption(option)
+  }
+    
+    
   return (
-    <div>
-        {/* Do not remove the main div */}
-    </div>
+    <>
+        <div style={{width:'500px',height:'300px',backgroundColor:'yellow'}}>
+          <h1 style={{textAlign:'center'}}>Parent Component</h1>
+          <Components1 selectedoption = {selectedoption}/>
+          <Components2  selectedoption = {selectedoption}/>
+          <p>Selected Option : {selectedOption} </p>
+        </div>
+    </>
   )
 }
 
-export default App
+export default App;
