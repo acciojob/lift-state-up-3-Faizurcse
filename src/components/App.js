@@ -17,7 +17,7 @@ const App = () => {
           <h1 style={{textAlign:'center'}}>Parent Component</h1>
           <Components1 selectedoption = {selectedoption}/>
           <Components2  selectedoption = {selectedoption}/>
-          <p>Selected Option : {selectedOption} </p>
+          <p>Selected Option: {selectedOption}git </p>
         </div>
     </>
   )
